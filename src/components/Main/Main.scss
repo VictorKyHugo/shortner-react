@@ -1,0 +1,52 @@
+@use "../../styles/abstracts/colors";
+
+.main{
+    height: 49vh;
+    text-align: center;
+
+    &__background{ 
+
+        height: inherit;
+
+        background: url("../../assets/images/illustration-working.svg");
+        background-size: 132vw auto;
+        background-repeat: no-repeat;
+        margin: 1.2rem 0 1.6rem 1.5rem;
+    }
+
+    &__content{
+
+        margin: 0 1.5rem;
+
+        h1{
+            color: colors.$very-dark-violet;
+            margin: 0 1.5rem;
+        }
+    
+        p{
+            text-align: center;
+            margin-top: 1rem;
+            color : colors.$grayish-violet;
+            line-height: 1.6rem;
+
+        }
+
+        &__button{
+            background: colors.$cyan;
+
+            margin-top: 1.5rem;
+            padding: 1.3rem 4rem;
+
+            outline: none;
+            border: none;
+
+            font-weight: 700;
+            color: white;
+
+            border-radius: 100px;
+
+        }
+    }
+
+    
+}

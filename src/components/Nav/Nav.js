@@ -29,9 +29,9 @@ function Nav() {
                     <a href="https://google.com">Features</a>
                     <a href="https://google.com">Pricing</a>
                     <a href="https://google.com">Resources</a>
-                    <hr />
+                    <div className="modal__hr"></div>
                     <a href="https://google.com">Login</a>
-                    <a href="https://google.com">Sign Up</a>
+                    <a className="modal__signup" href="https://google.com">Sign Up</a>
 
 
                 </div>

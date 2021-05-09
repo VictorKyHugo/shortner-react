@@ -19,12 +19,13 @@
     
     .modal__container{
 
+        
         display: flex;
         justify-content: center;
         
 
         .modal{
-            width: 80%;
+            width: 90%;
             height: 340px;
 
             display: flex;
@@ -41,13 +42,24 @@
             a{
                 color: white;
                 padding: 0.9rem;
-                font-weight: 500;
+                margin: 2px;
+                font-weight: 700;
             }
 
-            hr{
+            &__signup{
+                background: colors.$cyan;
+                width: 80%;
+
+                text-align: center;
+
+                border-radius: 100px;
+            }
+
+            &__hr{
                 width: 80%;
                 margin: 1rem;
-                color: colors.$grayish-violet;
+                height: 1px;
+                background: colors.$grayish-violet;
             }
         }
     }
