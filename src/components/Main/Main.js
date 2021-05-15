@@ -2,7 +2,7 @@ import "./Main.scss"
 
 function Main() {
     return (
-        <main className="main">
+        <div className="main">
             <div className="main__background">
             </div>
             <div className="main__content">
@@ -11,7 +11,7 @@ function Main() {
                 on how your links are performing.</p>
                 <button type="button" className="main__content__button">Get Started</button>
             </div>
-        </main>
+        </div>
     )
 }
 

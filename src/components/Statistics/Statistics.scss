@@ -1,0 +1,23 @@
+@use "../../styles/abstracts/colors";
+
+
+.statistics{
+    padding-top: 9rem;
+    background-color: #eff1f7;
+    text-align: center;
+
+    &__content{
+
+        margin: 0 2rem;
+
+        h2{
+            color: colors.$very-dark-violet;
+            margin-bottom: 1rem;
+        }
+
+        p{
+            color : colors.$grayish-violet;
+            line-height: 1.6rem;
+        }
+    }
+}

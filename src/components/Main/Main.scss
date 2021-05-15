@@ -1,12 +1,12 @@
 @use "../../styles/abstracts/colors";
 
 .main{
-    height: 49vh;
     text-align: center;
+    padding-bottom: 9rem;
 
     &__background{ 
 
-        height: inherit;
+        height: 49vh;
 
         background: url("../../assets/images/illustration-working.svg");
         background-size: 132vw auto;
