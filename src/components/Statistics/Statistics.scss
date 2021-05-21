@@ -7,6 +7,7 @@
     background-color: #eff1f7;
     text-align: center;
 
+
     &__content{
 
         margin: 0 2rem;
@@ -20,6 +21,21 @@
             color : colors.$grayish-violet;
             line-height: 1.6rem;
             margin-bottom: 6rem;
+        }
+
+        &__card{
+            position: relative;
+        }
+
+        &__cardline{
+            width: 7.5px;
+            height: 50rem;
+
+            background: colors.$cyan;
+
+            position: absolute;
+            left: 50%;
+            margin-left: -3.25px;
         }
     }
 }
