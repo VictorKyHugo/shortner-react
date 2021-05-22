@@ -1,0 +1,7 @@
+@use "../../styles/abstracts/colors";
+
+.footer{
+    height: 50rem;
+    background: colors.$very-dark-violet;
+    color: white;
+}
