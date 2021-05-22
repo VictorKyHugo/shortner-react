@@ -5,8 +5,10 @@ function Boost() {
     return (
         <div className="boost">
             <img className="boost_background" src={background} alt="Background" />
-            <h2> Teste Teste</h2>
-            <button> YEY</button>
+            <div className="boost__content">
+                <h2 className="boost__content__title"> Boost your links today</h2>
+                <button className="boost__content__button">Get Started</button>
+            </div>
         </div>
     )
 }
