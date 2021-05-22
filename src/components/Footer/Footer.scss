@@ -1,7 +1,41 @@
 @use "../../styles/abstracts/colors";
 
 .footer{
-    height: 50rem;
     background: colors.$very-dark-violet;
     color: white;
+
+    text-align: center;
+
+    h1{
+        padding: 2.5rem 0;
+    }
+
+    &__social_media{
+        padding: 0.5rem 0 3.5rem;
+
+        img{
+            padding: 0 0.8rem;
+        }
+    }
+
+    &__links{
+
+        display: flex;
+        flex-direction: column;
+
+        padding-bottom: 1.5rem;
+
+        span{
+            padding-bottom: 0.5rem;
+            color: colors.$grayish-violet;
+        }
+
+        :first-child{
+            font-weight: 700;
+            padding-bottom: 1.5rem;
+            color: white;
+        }
+
+      
+    }
 }
