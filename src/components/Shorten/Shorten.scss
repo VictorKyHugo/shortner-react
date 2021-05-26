@@ -3,11 +3,11 @@
 .shorten{
 
     position: absolute;
-    bottom: calc(128px / -2);
+    bottom: calc(140px / -2);
     left: 50%;
     margin-left: calc(85% / -2);
 
-    height: 128px;
+    height: 140px;
     width: 85%;
     border-radius: 5px;
     
@@ -17,21 +17,30 @@
     display: flex;
     justify-content: center;
 
-    form{
+    &__form{
             
         position: absolute;
         z-index: 10;
 
+        padding-top: 6.5px;
+
         display: flex;
         flex-direction: column;
-        align-items: center;        
-        input{
+        align-items: center;      
+          
+        &__input{
             width: 85%;
             height: 3rem;
             margin : 1rem 0;
+
+         :focus{
+            outline: none !important;
+            border-color: red;
+            box-shadow: 0 0 10px red;
+         }
         }
 
-        button{
+        &__button{
             width: 85%;
             height: 3rem;
 

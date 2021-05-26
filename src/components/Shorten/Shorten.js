@@ -18,9 +18,9 @@ function Shorten() {
 
     return (
         <div className="shorten">
-            <form>
-                <input placeholder="Shorten a link here..." value={link} onChange={inputHandler} />
-                <button onClick={teste}> Shorten it!</button>
+            <form className="shorten__form">
+                <input className="shorten__form__input" placeholder="Shorten a link here..." value={link} onChange={inputHandler} />
+                <button className="shorten__form__button" onClick={teste}> Shorten it!</button>
             </form>
             <div className="shorten__background">
                 <img src={background} alt="background" />

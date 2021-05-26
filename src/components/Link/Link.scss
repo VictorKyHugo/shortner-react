@@ -1,0 +1,45 @@
+@use "../../styles/abstracts/colors";
+
+.link{
+    background: white;
+
+    height: 9rem;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0 2rem 1rem;
+
+
+    &__line{
+        height: 1px;
+        width: 100%;
+        background: colors.$grayish-violet;
+    }
+
+    span{
+        padding: 0.65rem;
+        padding-left: 1rem;
+        width: 100%;
+        text-align: left;
+        
+
+    }
+
+    &__short{
+        color: colors.$cyan;
+    }
+
+    &__button{
+        background: colors.$cyan;
+        color: white;
+        font-weight: bold;
+        width: 90%;
+        height: 2.4rem;
+
+        border: none;
+        border-radius: 5px;
+    }
+}

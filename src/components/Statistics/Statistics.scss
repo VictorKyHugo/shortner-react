@@ -2,10 +2,12 @@
 
 
 .statistics{
-    padding-top: 9rem;
+    padding-top: 6rem;
     padding-bottom: 5rem;
     background-color: #eff1f7;
     text-align: center;
+
+   
 
 
     &__content{
@@ -13,6 +15,7 @@
         margin: 0 2rem;
 
         h2{
+            margin-top: 3rem;
             color: colors.$very-dark-violet;
             margin-bottom: 1rem;
         }

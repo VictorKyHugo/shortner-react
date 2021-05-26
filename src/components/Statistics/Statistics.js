@@ -4,6 +4,7 @@ import Card from './Card/Card'
 import brand from '../../assets/images/icon-brand-recognition.svg'
 import records from '../../assets/images/icon-detailed-records.svg'
 import customizable from '../../assets/images/icon-fully-customizable.svg'
+import Link from "../Link/Link"
 
 function Statistics() {
 
@@ -31,6 +32,11 @@ function Statistics() {
 
     return (
         <div className="statistics">
+            <div className="statistics__link_container">
+                <Link />
+                <Link />
+            </div>
+
             <div className="statistics__content">
                 <h2>Advanced Statistics</h2>
                 <p>Track how your links are performing across the web with our
