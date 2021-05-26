@@ -1,0 +1,62 @@
+@use "../../styles/abstracts/colors";
+
+.shorten{
+
+    position: absolute;
+    bottom: calc(128px / -2);
+    left: 50%;
+    margin-left: calc(85% / -2);
+
+    height: 128px;
+    width: 85%;
+    border-radius: 5px;
+    
+    background: colors.$dark-violet;
+
+
+    display: flex;
+    justify-content: center;
+
+    form{
+            
+        position: absolute;
+        z-index: 10;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;        
+        input{
+            width: 85%;
+            height: 3rem;
+            margin : 1rem 0;
+        }
+
+        button{
+            width: 85%;
+            height: 3rem;
+
+            background: colors.$cyan;
+            color: white;
+            font-weight: bold;
+
+            border: none;
+            border-radius: 5px;
+        }
+    }
+
+
+
+    &__background{
+
+        img{
+            position: absolute;
+            right: 0;
+            
+
+            width: 80%;
+            height: 75%;
+            
+            border-top-right-radius: 5px;
+        }
+    }
+}

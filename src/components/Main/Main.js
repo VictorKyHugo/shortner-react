@@ -1,3 +1,4 @@
+import Shorten from "../Shorten/Shorten"
 import "./Main.scss"
 
 function Main() {
@@ -11,6 +12,7 @@ function Main() {
                 on how your links are performing.</p>
                 <button type="button" className="main__content__button">Get Started</button>
             </div>
+            <Shorten />
         </div>
     )
 }
