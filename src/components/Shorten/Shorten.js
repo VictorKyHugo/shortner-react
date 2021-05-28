@@ -25,7 +25,6 @@ function Shorten() {
             <div className="shorten__background">
                 <img src={background} alt="background" />
             </div>
-
         </div>
     )
 }
