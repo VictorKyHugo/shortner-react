@@ -6,11 +6,14 @@ function Link() {
 
     const teste = useContext(LinkContext)
 
+
+    const allLinks = teste[0].map(item => item)
+
     return (
         <div className="link">
-            <span className="link__complete">{teste}</span>
+            <span className="link__complete">{allLinks[0] ? allLinks[0].original : "loading"}</span>
             <div className="link__line"></div>
-            <span className="link__short">https://rel.ink/k4l7sb</span>
+            <span className="link__short">{allLinks[0] ? allLinks[0].short : "loading"}</span>
             <button className="link__button">Copy</button>
         </div>
     )
