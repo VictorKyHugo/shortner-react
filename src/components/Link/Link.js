@@ -4,10 +4,10 @@ import './Link.scss'
 
 function Link() {
 
-    const teste = useContext(LinkContext)
+    const { links } = useContext(LinkContext)
 
+    const allLinks = links.map(item => item)
 
-    const allLinks = teste[0].map(item => item)
 
     return (
         <div className="link">

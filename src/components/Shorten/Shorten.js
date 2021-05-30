@@ -1,25 +1,27 @@
-import { useState } from 'react'
+import { useContext } from 'react'
+import { LinkContext } from '../../contexts/LinkContext'
 
 import './Shorten.scss'
 import background from '../../assets/images/bg-shorten-mobile.svg'
 
 function Shorten() {
 
-    const [link, setLink] = useState('')
+    const { fetchData, setLinkToShort, linkToShort } = useContext(LinkContext)
+
 
     const inputHandler = (e) => {
-        setLink(e.target.value)
+        setLinkToShort(e.target.value)
     }
 
-    const teste = (e) => {
+    const teste = async (e) => {
         e.preventDefault()
-        alert(link)
+        fetchData()
     }
 
     return (
         <div className="shorten">
             <form className="shorten__form">
-                <input className="shorten__form__input" placeholder="Shorten a link here..." value={link} onChange={inputHandler} />
+                <input className="shorten__form__input" placeholder="Shorten a link here..." value={linkToShort} onChange={inputHandler} />
                 <button className="shorten__form__button" onClick={teste}> Shorten it!</button>
             </form>
             <div className="shorten__background">
