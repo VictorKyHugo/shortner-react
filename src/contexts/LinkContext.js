@@ -15,7 +15,8 @@ export const LinkProvider = ({ children }) => {
             return (
                 [...prev, {
                     original: dataJson.result.original_link,
-                    short: dataJson.result.full_short_link
+                    short: dataJson.result.full_short_link,
+                    code: dataJson.result.code
                 }]
             )
         })
@@ -26,7 +27,7 @@ export const LinkProvider = ({ children }) => {
 
 
     return (
-        <LinkContext.Provider value={{ links, setLinks, setLinkToShort, linkToShort, fetchData }}>
+        <LinkContext.Provider value={{ links, setLinkToShort, linkToShort, fetchData }}>
             {children}
         </LinkContext.Provider>
     )

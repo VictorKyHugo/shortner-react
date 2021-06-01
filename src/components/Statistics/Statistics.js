@@ -1,4 +1,6 @@
 import "./Statistics.scss"
+import { useContext } from 'react'
+import { LinkContext } from '../../contexts/LinkContext'
 import Card from './Card/Card'
 
 import brand from '../../assets/images/icon-brand-recognition.svg'
@@ -7,6 +9,8 @@ import customizable from '../../assets/images/icon-fully-customizable.svg'
 import Link from "../Link/Link"
 
 function Statistics() {
+
+    const { links } = useContext(LinkContext)
 
     const statisticsList = {
         brand_recognition:
@@ -33,8 +37,11 @@ function Statistics() {
     return (
         <div className="statistics">
             <div className="statistics__link_container">
-                <Link />
-                <Link />
+                {links.map(item => {
+                    return (
+                        <Link original={item.original} short={item.short} key={item.code} />
+                    )
+                })}
             </div>
 
             <div className="statistics__content">
