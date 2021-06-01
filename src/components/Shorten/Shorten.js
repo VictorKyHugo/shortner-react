@@ -3,6 +3,7 @@ import { LinkContext } from '../../contexts/LinkContext'
 
 import './Shorten.scss'
 import background from '../../assets/images/bg-shorten-mobile.svg'
+import Loading from '../Loading/Loading'
 
 function Shorten() {
 
@@ -22,7 +23,7 @@ function Shorten() {
         <div className="shorten">
             <form className="shorten__form">
                 <input className="shorten__form__input" placeholder="Shorten a link here..." value={linkToShort} onChange={inputHandler} />
-                <button className="shorten__form__button" onClick={teste}> Shorten it!</button>
+                <button className="shorten__form__button" onClick={teste}><Loading /></button>
             </form>
             <div className="shorten__background">
                 <img src={background} alt="background" />

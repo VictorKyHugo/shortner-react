@@ -1,0 +1,17 @@
+@use "../../styles/abstracts/colors";
+
+.circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: colors.$cyan;
+    border: solid 3px rgba(255, 255, 255, 0.4);
+    border-top-color: white;
+    animation: spin linear 1s infinite ;
+}
+
+@keyframes spin{
+    100%{
+        transform: rotate(360deg);
+    }
+}

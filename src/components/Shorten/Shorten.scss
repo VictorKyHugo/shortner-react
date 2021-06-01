@@ -43,6 +43,10 @@
         &__button{
             width: 85%;
             height: 3rem;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
             background: colors.$cyan;
             color: white;
