@@ -7,15 +7,16 @@ import Loading from '../Loading/Loading'
 
 function Shorten() {
 
-    const { fetchData, setLinkToShort, linkToShort } = useContext(LinkContext)
+    const { fetchData, setLinkToShort, linkToShort, isLoading, setIsLoading } = useContext(LinkContext)
 
 
     const inputHandler = (e) => {
         setLinkToShort(e.target.value)
     }
 
-    const teste = async (e) => {
+    const buttonHandler = (e) => {
         e.preventDefault()
+        setIsLoading(true)
         fetchData()
     }
 
@@ -23,7 +24,7 @@ function Shorten() {
         <div className="shorten">
             <form className="shorten__form">
                 <input className="shorten__form__input" placeholder="Shorten a link here..." value={linkToShort} onChange={inputHandler} />
-                <button className="shorten__form__button" onClick={teste}><Loading /></button>
+                <button className="shorten__form__button" onClick={buttonHandler}>{isLoading ? <Loading /> : "Shorten it!"}</button>
             </form>
             <div className="shorten__background">
                 <img src={background} alt="background" />

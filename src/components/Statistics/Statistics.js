@@ -33,13 +33,22 @@ function Statistics() {
         }
     }
 
+    function formatString(string) {
+        if (string.length > 32) {
+            let str = string.substring(0, 32)
+            str += "..."
+            return (str)
+        } else {
+            return (string)
+        }
+    }
 
     return (
         <div className="statistics">
             <div className="statistics__link_container">
                 {links.map(item => {
                     return (
-                        <Link original={item.original} short={item.short} key={item.code} />
+                        <Link original={formatString(item.original)} short={item.short} key={item.code} />
                     )
                 })}
             </div>

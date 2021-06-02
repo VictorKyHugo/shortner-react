@@ -6,6 +6,8 @@ export const LinkProvider = ({ children }) => {
 
     const [linkToShort, setLinkToShort] = useState("")
     const [links, setLinks] = useState([])
+    const [isLoading, setIsLoading] = useState(false)
+
 
     const fetchData = async () => {
 
@@ -20,6 +22,8 @@ export const LinkProvider = ({ children }) => {
                 }]
             )
         })
+        setIsLoading(false)
+        setLinkToShort("")
     }
 
 
@@ -27,7 +31,7 @@ export const LinkProvider = ({ children }) => {
 
 
     return (
-        <LinkContext.Provider value={{ links, setLinkToShort, linkToShort, fetchData }}>
+        <LinkContext.Provider value={{ links, setLinkToShort, linkToShort, fetchData, isLoading, setIsLoading }}>
             {children}
         </LinkContext.Provider>
     )
