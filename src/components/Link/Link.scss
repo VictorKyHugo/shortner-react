@@ -42,5 +42,9 @@
 
         border: none;
         border-radius: 5px;
+
+        &--copied{
+            background: colors.$dark-violet !important;
+        }
     }
 }
