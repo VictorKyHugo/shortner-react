@@ -33,7 +33,6 @@ function Nav() {
                     <a href="https://google.com">Login</a>
                     <a className="modal__signup" href="https://google.com">Sign Up</a>
 
-
                 </div>
             </div>
         </div>

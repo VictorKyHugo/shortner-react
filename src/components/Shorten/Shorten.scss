@@ -31,7 +31,20 @@
         &__input{
             width: 85%;
             height: 3rem;
-            margin : 1rem 0;
+            margin-top : 1rem;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+            outline: none;
+            border: 2px solid white;
+
+        }
+     
+        span{
+            color: rgb(240, 65, 65);
+            font-size: 0.7rem;
+            align-self: flex-start;
+            margin-left: 8%;
+            display: none;
         }
 
         &__button{

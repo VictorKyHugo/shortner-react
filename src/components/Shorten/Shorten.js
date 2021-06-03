@@ -23,13 +23,14 @@ function Shorten() {
     return (
         <div className="shorten">
             <form className="shorten__form">
-                <input className="shorten__form__input" placeholder="Shorten a link here..." value={linkToShort} onChange={inputHandler} />
-                <button className="shorten__form__button" onClick={buttonHandler}>{isLoading ? <Loading /> : "Shorten it!"}</button>
+                <input className="shorten__form__input" style={{ marginBottom: 0, border: "2px solid rgb(240, 65, 65)" }} placeholder="Shorten a link here..." value={linkToShort} onChange={inputHandler} />
+                <span style={{ display: "block" }}>Please insert a valid link</span>
+                <button className="shorten__form__button" style={{ marginTop: "5px" }} onClick={buttonHandler}>{isLoading ? <Loading /> : "Shorten it!"}</button>
             </form>
             <div className="shorten__background">
                 <img src={background} alt="background" />
             </div>
-        </div>
+        </div >
     )
 }
 
