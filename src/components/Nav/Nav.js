@@ -23,6 +23,14 @@ function Nav() {
                 <div className="nav__menu">
                     <i className="fas fa-bars nav__menu__icon" onClick={handleMenu}></i>
                 </div>
+                <div className="nav__items">
+                    <span>Features</span>
+                    <span>Pricing</span>
+                    <span>Resources</span>
+                    <div></div>
+                    <span>Login</span>
+                    <span>Sign Up</span>
+                </div>
             </nav>
             <div className="modal__container" style={{ display: modalDisplay }}>
                 <div className="modal">
@@ -32,7 +40,6 @@ function Nav() {
                     <div className="modal__hr"></div>
                     <a href="https://google.com">Login</a>
                     <a className="modal__signup" href="https://google.com">Sign Up</a>
-
                 </div>
             </div>
         </div>

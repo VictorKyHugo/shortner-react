@@ -49,6 +49,46 @@
 
         }
     }
-
     
+}
+
+@media(min-width: 1060px){
+    .main{
+
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: row-reverse;
+
+        &__background{
+            img{
+                margin: 0;
+                height: 60vh;
+            }
+        }
+
+        &__content{
+            margin-top: 2.5rem;
+            margin-left: 7.4rem;
+            margin-right: 13%; 
+            text-align: left;
+            width: 50%;
+
+            h1{
+                margin: 0;
+                font-size: 4rem;
+                line-height: 4.5rem;
+            }
+
+            p{
+                width: 70%;
+                text-align: justify;
+            }
+
+            &__button{
+                padding: 0.7rem 2rem;
+            }
+
+     
+        }
+    }
 }

@@ -9,6 +9,10 @@
         align-items: center;
         justify-content: space-between;
         padding: 2.5rem 1.5rem 0;
+
+        &__items{
+            display: none;
+        }
     
     
         &__menu__icon{
@@ -68,6 +72,54 @@
     }
 }
 
+@media(min-width: 1060px){
+    .nav{
+        margin: 0 6rem;
+
+        &__logo__container{
+            display: flex;
+            align-items: center;
+        }
+
+        &__menu{
+            display: none;
+        }
+
+        &__items{
+            flex: 1;
+            display: flex !important;
+            
+       
+            div{
+                margin: 0 auto;
+            }
+
+           span{
+               margin: 1rem;
+               align-self: center;
+
+               color: colors.$grayish-violet;
+
+               &:first-of-type{
+                   margin-left: 3rem;
+               }
+
+               &:last-of-type{
+                   background: colors.$cyan;
+                   border-radius: 50px;
+
+                   color: white;
+
+                   padding: 5px 20px;
+               }
+           }
+
+           
+
+          
+        }
+    }
+}
     
 
 
