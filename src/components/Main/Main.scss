@@ -5,14 +5,15 @@
     padding-bottom: 9rem;
     position: relative;
 
+
     &__background{ 
+        overflow-x: hidden;
 
-        height: 49vh;
 
-        background: url("../../assets/images/illustration-working.svg");
-        background-size: 132vw auto;
-        background-repeat: no-repeat;
-        margin: 1.2rem 0 1.6rem 1.5rem;
+        img{
+            height: 43vh;
+            margin: 5%;
+        }
     }
 
     &__content{

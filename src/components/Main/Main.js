@@ -1,10 +1,12 @@
 import Shorten from "../Shorten/Shorten"
+import background from "../../assets/images/illustration-working.svg"
 import "./Main.scss"
 
 function Main() {
     return (
         <div className="main">
             <div className="main__background">
+                <img src={background} alt="background" />
             </div>
             <div className="main__content">
                 <h1>More than just shorter links</h1>
