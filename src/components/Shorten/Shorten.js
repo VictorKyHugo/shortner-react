@@ -2,7 +2,8 @@ import { useContext, useState } from 'react'
 import { LinkContext } from '../../contexts/LinkContext'
 
 import './Shorten.scss'
-import background from '../../assets/images/bg-shorten-mobile.svg'
+import backgroundMobile from '../../assets/images/bg-shorten-mobile.svg'
+import backgroundDesktop from '../../assets/images/bg-shorten-desktop.svg'
 import Loading from '../Loading/Loading'
 
 function Shorten() {
@@ -34,7 +35,8 @@ function Shorten() {
                 <button className="shorten__form__button" style={isValid ? {} : { marginTop: "5px" }} onClick={buttonHandler}>{isLoading ? <Loading /> : "Shorten it!"}</button>
             </form>
             <div className="shorten__background">
-                <img src={background} alt="background" />
+                <img src={backgroundMobile} className="shorten__background--mobile" alt="background" />
+                <img src={backgroundDesktop} className="shorten__background--desktop" alt="background" />
             </div>
         </div >
     )

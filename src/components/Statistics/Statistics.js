@@ -33,9 +33,9 @@ function Statistics() {
         }
     }
 
-    function formatString(string) {
-        if (string.length > 32) {
-            let str = string.substring(0, 32)
+    function formatString(string, length) {
+        if (string.length > length) {
+            let str = string.substring(0, length)
             str += "..."
             return (str)
         } else {
@@ -45,10 +45,17 @@ function Statistics() {
 
     return (
         <div className="statistics">
-            <div className="statistics__link_container">
+            <div className="statistics__link_container--mobile">
                 {links.map(item => {
                     return (
-                        <Link original={formatString(item.original)} short={item.short} key={item.code} />
+                        <Link original={formatString(item.original, 32)} short={item.short} key={item.code} />
+                    )
+                })}
+            </div>
+            <div className="statistics__link_container--desktop">
+                {links.map(item => {
+                    return (
+                        <Link original={formatString(item.original, 50)} short={item.short} key={item.code} />
                     )
                 })}
             </div>

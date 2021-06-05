@@ -20,7 +20,7 @@
         opacity: 50%;
     }
 
-    span{
+    &__complete{
         padding: 0.65rem;
         padding-left: 1rem;
         width: 100%;
@@ -45,6 +45,29 @@
 
         &--copied{
             background: colors.$dark-violet !important;
+        }
+    }
+}
+
+@media(min-width: 1060px){
+    .link{
+        
+        margin: 0 10rem 1rem;
+        height: 4rem;
+        flex-direction: row;
+
+        &__complete{
+            flex: 1;
+            margin-left: 1rem;
+        }
+
+        &__line{
+            display: none;
+        }
+
+        &__button{
+            width: 5.5rem;
+            margin: 0 1.5rem;
         }
     }
 }

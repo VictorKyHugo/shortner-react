@@ -7,6 +7,14 @@
     background-color: #eff1f7;
     text-align: center;
 
+    &__link_container{
+        &--mobile{
+            display: block;
+        }
+        &--desktop{
+            display: none;
+        }
+    }
    
 
 
@@ -39,6 +47,19 @@
             position: absolute;
             left: 50%;
             margin-left: -3.25px;
+        }
+    }
+}
+
+@media(min-width: 1060px){
+    .statistics{
+        &__link_container{
+            &--mobile{
+                display: none;
+            }
+            &--desktop{
+                display: block;
+            }
         }
     }
 }
