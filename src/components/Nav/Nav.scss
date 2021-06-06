@@ -100,6 +100,11 @@
 
                color: colors.$grayish-violet;
 
+               &:hover{
+                   color: colors.$very-dark-violet;
+                   cursor: pointer;
+               }
+
                &:first-of-type{
                    margin-left: 3rem;
                }
@@ -111,6 +116,10 @@
                    color: white;
 
                    padding: 5px 20px;
+
+                   &:hover{
+                       opacity: 80%;
+                   }
                }
            }
 

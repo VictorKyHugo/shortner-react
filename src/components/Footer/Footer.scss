@@ -13,8 +13,8 @@
     &__social_media{
         padding: 0.5rem 0 3.5rem;
 
-        img{
-            padding: 0 0.8rem;
+        svg{
+            margin: 0 0.8rem;
         }
     }
 
@@ -39,3 +39,49 @@
       
     }
 }
+
+@media(min-width: 1060px){
+    .footer{
+        display: flex;
+
+        h1{
+            flex: 1;
+        }
+
+        &__links{
+            margin: 3.5rem 2rem 0;
+
+            :first-child{
+                &:hover{
+                    color: white;
+                    cursor: default;
+                }
+            }
+
+            span{
+                
+               
+
+                &:hover{
+                    color: colors.$cyan;
+                    cursor: pointer;
+                }
+
+                
+            }
+        }
+
+        &__social_media{
+            margin: 3.15rem 5rem 0;
+            margin-top: 3.15rem;
+
+            }
+            :hover{
+                fill: colors.$cyan;
+
+            }
+            
+        }
+    
+
+    }

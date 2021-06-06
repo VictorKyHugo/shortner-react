@@ -61,5 +61,23 @@
                 display: block;
             }
         }
+
+        &__content{
+            &__card{
+                display: flex;
+
+                &__ultimo{
+                    background: red;
+                }
+            }
+            &__cardline{
+                height: 7.5px;
+                width: 50rem;
+
+                position: absolute;
+                left: 25%;
+                top: 35%;
+            }
+        }
     }
 }

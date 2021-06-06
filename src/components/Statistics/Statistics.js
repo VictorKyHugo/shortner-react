@@ -77,7 +77,6 @@ function Statistics() {
                         title={statisticsList.detailed_records.title}
                         text={statisticsList.detailed_records.text}
                         icon={statisticsList.detailed_records.icon}
-
                     />
                     <Card
                         title={statisticsList.fully_customizable.title}

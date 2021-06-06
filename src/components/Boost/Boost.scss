@@ -12,6 +12,15 @@
     align-items: center;
     justify-content: center;
 
+    &__background{
+        &--mobile{
+            display: block;
+        }
+        &--desktop{
+            display: none;
+        }
+    }
+
     &__content{
         position: absolute;
         display: flex;
@@ -35,6 +44,30 @@
             color: white;
 
             border-radius: 100px;
+        }
+    }
+}
+
+@media(min-width: 1060px){
+    .boost{
+        height: 250px;
+        
+        &__background{
+            &--mobile{
+                display: none;
+            }
+            &--desktop{
+                display: block;
+            }
+        }
+
+        &__content{
+            &__button{
+                &:hover{
+                    opacity: 80%;
+                    cursor: pointer;
+                }
+            }
         }
     }
 }
