@@ -18,6 +18,7 @@
         width: 100%;
         background: colors.$grayish-violet;
         opacity: 50%;
+        
     }
 
     &__complete{
@@ -31,6 +32,7 @@
 
     &__short{
         color: colors.$cyan;
+        margin: 0.6rem 0;
     }
 
     &__button{

@@ -65,6 +65,8 @@
         &__content{
             &__card{
                 display: flex;
+                align-items: center;
+                justify-content: center;
 
                 &__ultimo{
                     background: red;
@@ -75,7 +77,7 @@
                 width: 50rem;
 
                 position: absolute;
-                left: 25%;
+                left: 24%;
                 top: 35%;
             }
         }
