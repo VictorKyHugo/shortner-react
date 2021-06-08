@@ -2,7 +2,7 @@
 
 ### Screenshot
 
-![](./src/assets/screenshots/index-desktop.png)
+![200, 300](./src/assets/screenshots/index-desktop.png)
 ![](./src/assets/screenshots/links-mobile.png)
 
 ### Desafio
