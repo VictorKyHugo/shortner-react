@@ -16,11 +16,6 @@ Os usuários devem conseguir:
 - Receber uma mensagem de erro ao enviar o form se:
   - O campo 'input' estiver vazio
 
-### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
 ## Processo
 
 ### Feito com
