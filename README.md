@@ -1,4 +1,4 @@
-## Overview
+## Shortner
 
 ### Screenshot
 
@@ -27,5 +27,31 @@ Os usuários devem conseguir:
 - ReactJS
 - Métodologia BEMCSS
 
+# Instruções para executar o código
 
+Para instalar as dependências do código você precisara ter node 16 (A versão atual vai dar erro de compatibilidade), você pode trocar facilmente a versão do node na sua máquina utilizando NVM
+
+NVM para mac/linux: https://github.com/nvm-sh/nvm
+NVM para windows: https://github.com/coreybutler/nvm-windows
+
+Instale o NVM e utilize os seguintes comandos para trocar a versão do node
+
+```
+nvm install 16
+```
+```
+nvm use 16
+```
+
+Após trocar a versão do node, instale as dependências do projeto utilizando o seguinte comando:
+
+```
+npm install
+```
+
+Por último rode o projeto utilizando:
+
+```
+npm start
+```
 
